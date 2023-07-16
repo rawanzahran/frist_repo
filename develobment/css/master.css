@@ -1,0 +1,131 @@
+/*Global*/
+
+*{
+    box-sizing: border-box;
+}
+
+
+:root{
+    --main-color: #6b5cb4;
+    --bg-color: #51365c;
+    --text-color: #d5dfe7;
+    --hover-color: #423e5a;
+}
+
+body{
+    font-family: "open sans" , sans-serif;
+    background-color: var(--bg-color);
+}
+
+.container{
+    margin:0 auto;
+    width: 1100px;
+}
+
+
+/* start header */
+
+header .container{
+    margin-top: 25px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+
+
+header.logo img{
+    width: 100px;
+    border-radius: 7px;
+    box-shadow: -1px 2px 10px 1px #1d1d36, -1px 2px 10px 1px #1d1d36;
+
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    color: var(--text-color);
+    align-items: center;
+}
+
+header nav ul li{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: var(--text-color);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+header nav ul li a:hover{
+    color: var(--hover-color);
+}
+/* end header */
+
+
+/* start main */
+  main .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
+  main .info{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 60px;
+  }
+
+  main .info h1{
+    font-size: 50px;
+    margin: 0;
+  }
+
+  main .info h1,
+  main .info p{
+    color: var(--text-color);
+  }
+
+  main .info p {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  
+  main .info button{
+    background-color: var(--main-color);
+    border: none;
+    padding: 28px;
+    color: var(--text-color);
+    font-weight: bolder;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 63px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    -webkit-border-radius: 63px;
+    -moz-border-radius: 63px;
+    -ms-border-radius: 63px;
+    -o-border-radius: 63px;
+}
+
+main .info button:hover{
+    background-color: var(--hover-color);
+}
+  
+/* end main */
